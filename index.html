@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ramzan | Cloud Engineer</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #020617;
+}
+
+header h2 { color: cyan; }
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover { color: cyan; }
+
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(270deg, #00c6ff, #0072ff);
+    animation: bg 8s infinite alternate;
+}
+
+@keyframes bg {
+    from { background-position: left; }
+    to { background-position: right; }
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero span { color: yellow; }
+
+.btn {
+    padding: 10px 20px;
+    background: black;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.section {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background: cyan;
+    color: rgb(0, 0, 0);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Ramzan</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>I am <span>Ramzan</span></h1>
+    <p>Aspiring Cloud Engineer | DevOps Learner</p>
+    <button class="btn">Hire Me</button>
+</section>
+
+<section class="section" id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+        <div class="card">Python</div>
+        <div class="card">Linux</div>
+        <div class="card">Networking</div>
+        <div class="card">Git & GitHub</div>
+        <div class="card">Cloud (AWS)</div>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: your@email.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Ramzan | Future Cloud Engineer</p>
+</footer>
+
+</body>
+</html>
